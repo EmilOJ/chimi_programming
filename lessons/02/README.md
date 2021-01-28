@@ -81,6 +81,8 @@ How can we switch the values so the below code prints "`Min san`"?
 print(first_word + " " + second_word)
 ```
 
+[Check Sheets](https://docs.google.com/spreadsheets/)
+
 ### Variable names
 
 ```python
@@ -142,7 +144,7 @@ Let's add a prompt
 ```python
 print("What's your name?") 
 min_name = input()
-print(f"Your name is {min_name}") 
+print(f"Your name is " + min_name) 
 
 
 
@@ -151,7 +153,7 @@ print(f"Your name is {min_name}")
 
 # Note
 # The above is the same as
-print(f"Your name is " + min_name) 
+print(f"Your name is {min_name}") 
 ```
 
 ### Exercise 0.5
@@ -199,3 +201,40 @@ Name three data types
 
 ## HW3
 
+What does the variable bacon contain after the following code runs?
+
+```python
+min_age = 32
+min_age + 1
+```
+
+## HW4
+
+What is printed in the following program?
+
+```python
+print('spam' + 'spamspam')
+print('spam' * 3)
+```
+
+## HW5
+
+Why does this program cause an error? How can you fix it?
+
+```python
+kani_san_eaten = 99 # Don't change this
+
+print('I have eaten ' + kani_san_eaten + ' kani-san.')
+```
+
+## HW6
+
+Search online and find out how you can find the lenght of a string.
+For example the string `"min-san"` has the length 7, because it has 7 characters
+
+```python
+min_string = "min-san"
+
+# What does you need to write inside the print() statement to print the length of `min-san` (which is 7)
+print(???)
+```
