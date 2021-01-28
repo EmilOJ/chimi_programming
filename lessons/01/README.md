@@ -271,31 +271,3 @@ pyenv global 3.9.1
 >>> "5" * 5
 ```
 
-## Variables
-
-```python
->>> strength = 2
->>> name = "ぴょき"
-
->>> strength
->>> name
-```
-
-Where is the information stored?
-
-```
->>> minsan_age = 32
->>> minchan_age = 31
-```
-
-```
-
-```
-
-```
->>> space = " "
->>> a_letter = "a"
->>> san = "san"
-```
-
-How can we get `aaaaaaaaaa san` (10 a's)?
