@@ -2,4 +2,4 @@
 
 ## Lessons
 
-- [Lesson 1](https://github.com/EmilOJ/chimi_programming/01)
+- [Lesson 1](https://github.com/EmilOJ/chimi_programming/tree/master/lessons/01)
