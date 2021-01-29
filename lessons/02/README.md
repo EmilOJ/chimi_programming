@@ -180,10 +180,6 @@ num2 = input() # 2
 print(int(num1) + int(num2))
 ```
 
-## Let's write a larger program
-**Task**: Write a program that asks for the user's age (e.g. `32`), and says `"You'll be 33 next year`.
-
-
 # Homework
 
 ## HW1
@@ -238,3 +234,9 @@ min_string = "min-san"
 # What does you need to write inside the print() statement to print the length of `min-san` (which is 7)
 print(???)
 ```
+
+## HW7
+
+Write a program that asks for the user's age (e.g. `32`), and says `"You'll be 33 next year`.
+
+
