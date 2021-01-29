@@ -197,7 +197,7 @@ Name three data types
 
 ## HW3
 
-What does the variable bacon contain after the following code runs?
+What does the variable `min_age` contain after the following code runs?
 
 ```python
 min_age = 32
@@ -220,6 +220,7 @@ Why does this program cause an error? How can you fix it?
 ```python
 kani_san_eaten = 99 # Don't change this
 
+# Fix this ↓
 print('I have eaten ' + kani_san_eaten + ' kani-san.')
 ```
 
@@ -231,8 +232,10 @@ For example the string `"min-san"` has the length 7, because it has 7 characters
 ```python
 min_string = "min-san"
 
-# What does you need to write inside the print() statement to print the length of `min-san` (which is 7)
-print(???)
+# What you need to write on the rigth side below? (Writing `7` is not correct!)
+min_string_lenght = ???
+
+print(min_string_length)
 ```
 
 ## HW7
