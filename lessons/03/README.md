@@ -73,7 +73,7 @@ min_san_is_older = min_san_age > min_chan_age
 print(min_san_is_older)
 ```
 
-## Logic
+## Logic (Truth-table)
 
 ![](img/truth_table.png)
 
