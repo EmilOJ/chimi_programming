@@ -75,9 +75,7 @@ print(min_san_is_older)
 
 ## Logic
 
-Go to Numbers
-
-(I'll upload the screenshots)
+![](img/truth_table.png)
 
 
 ## The almighty `if` 
