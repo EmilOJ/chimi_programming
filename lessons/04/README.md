@@ -1,15 +1,13 @@
-#  Flow Control 2
-
-## Repeating stuff
+# Repeating stuff: Loops
 
 Homework from last time
 ```python
-print("What your name? ")
+print("what your name? ")
 user_name = input()
-if user_name == "Tarako san":
-    print("Welcome back, Tarako san")    
+if user_name == "tarako san":
+    print("welcome back, tarako san")    
 else:
-    print("Access Denied")
+    print("access denied")
 ```
 
 What if we want the program to keep asking, until the user gets it right?
@@ -28,45 +26,104 @@ Tarako san
 > Welcome back, Tarako san
 ```
 
+![](img/loop.png)
 
-## Repeating more stuff
+We can say this is:
 
-![](img/countdown.gif)
-The code could look like this 
+
+*Keep asking while `user_name` is not `"Tarako san"`*
+
+## While Loops
 
 ```python
-import time
-
-print("10")
-time.sleep(1)
-
-print("9")
-time.sleep(1)
-
-print("8")
-time.sleep(1)
-
-print("7")
-time.sleep(1)
-
-print("6")
-time.sleep(1)
-
-print("5")
-time.sleep(1)
-
-print("4")
-time.sleep(1)
-
-print("3")
-time.sleep(1)
-
-print("2")
-time.sleep(1)
-
-print("1")
-time.sleep(1)
-
-print("00")
+while bool:
+    ...
 ```
 
+
+```python
+while True:
+    print("min")
+```
+The above is called an **infinite loop**
+
+```python
+while False:
+    print("min")
+
+print("san")
+```
+
+```python
+num_doughnuts = 10
+while num_doughnuts > 0:
+    print("eating doughtnut...")
+    num_doughnuts = num_doughnuts - 1
+    print(f"{num_doughnuts} left")
+
+print("All done!")
+```
+
+```python
+answer_correct = False
+
+while not answer_correct:
+    print("What's 1+1?")
+    answer = input()
+    answer_correct = answer == "2"
+
+print("Yay")
+```
+
+### Exercise: **Solve the original problem!**
+
+![](img/breakcontinue.png)
+
+
+### Your first game! 
+
+```python
+import random
+secretNumber = random.randint(1, 20)
+print('I am thinking of a number between 1 and 20.')
+
+attempts_left = 6
+while attempts_left > 0:
+    attempts_left = attempts_left - 1
+    print('Take a guess.')
+    guess = int(input())
+
+    if guess < secretNumber:
+        print('Your guess is too low.')
+    elif guess > secretNumber:
+        print('Your guess is too high.')
+    else:
+        break   
+
+if guess == secretNumber:
+    print('Good job! You guessed my number')
+else:
+    print('Nope. The number I was thinking of was ' + str(secretNumber))
+```
+
+# Homework
+
+## HW1
+
+What is the difference between break and continue?
+
+## HW2 
+
+Write a program that prints the numbers from 1 to 100
+
+## HW3
+
+Copy the 'Guessing number' game into a `.py` file and do the following modifications:
+
+1) Use `time.sleep()` to make it seem like the computer is thinking when you enter a guess. You can add a `print()` saying something like `"Let me think...."` 
+2) When the user enters a guess and is less than 5 away from the correct number print `"Getting closer!"` 
+3) When the game ends and the user was only 1 away from the correct number print `"Almost! Try again"`.
+4) Instead of ending the program when the game is over, ask the user if he/she wants to play again. For example print `"Try again? (Y/N)"` and if he/she types `"Y"` the game is restarted automatically. Else it ends like before.
+
+
+BONUS: Change the range to a number between 1 and 100, and give the player 7 attempts instead of 6. Play the game and find a method to always win. (We'll talk about this method next time!)
