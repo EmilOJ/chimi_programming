@@ -123,7 +123,7 @@ Copy the 'Guessing number' game into a `.py` file and do the following modificat
 1) Use `time.sleep()` to make it seem like the computer is thinking when you enter a guess. You can add a `print()` saying something like `"Let me think...."` 
 2) When the user enters a guess and is less than 5 away from the correct number print `"Getting closer!"` 
 3) When the game ends and the user was only 1 away from the correct number print `"Almost! Try again"`.
-4) Instead of ending the program when the game is over, ask the user if he/she wants to play again. For example print `"Try again? (Y/N)"` and if he/she types `"Y"` the game is restarted automatically. Else it ends like before.
+4) Instead of ending the program when the game is over, ask the user if he/she wants to play again. For example print `"Try again? (Y/N)"` and if he/she types `"Y"` the game is restarted automatically. Otherwise it ends like before.
 
 
 BONUS: Change the range to a number between 1 and 100, and give the player 7 attempts instead of 6. Play the game and find a method to always win. (We'll talk about this method next time!)
