@@ -1,45 +1,41 @@
+# Lesson 5: Computation and Algorithms
 
-
-## Repeating more stuff
-
-![](img/countdown.gif)
-The code could look like this 
+## How fast are computers?
 
 ```python
-import time
+from timeit import default_timer as timer
 
-print("10")
-time.sleep(1)
+start = timer()
 
-print("9")
-time.sleep(1)
+# Do something...
 
-print("8")
-time.sleep(1)
+end = timer()
 
-print("7")
-time.sleep(1)
-
-print("6")
-time.sleep(1)
-
-print("5")
-time.sleep(1)
-
-print("4")
-time.sleep(1)
-
-print("3")
-time.sleep(1)
-
-print("2")
-time.sleep(1)
-
-print("1")
-time.sleep(1)
-
-print("0")
+print(f"Finished in {end - start:.10f} seconds")
 ```
 
+Test on your own computer:
+
+Exercise: Asssign a value to a variable in a `while` loop. How many iterations can you set the while loop to do until you notice the time it takes?
+
+On my computer it took 7 seconds for 100,000,000 iterations.
+
+![](img/chess.jpg)
+
+Possibilities in chess:
+
+*1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000*
+
+If it takes 7 seconds to do 100,000,000 computations, to check all chess combinations it'll take
+
+*31709791980000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 years*
 
 
+For comparison, the age of the universe is: 
+
+*13900000000 years*
+
+
+## How do we compute complex problems?
+
+### Number guessing game
